@@ -35,8 +35,9 @@ Total hand-written code: **zero lines.** The value here was in prompt design, to
 
 ## Screenshots
 <img width="2560" height="1402" alt="image" src="https://github.com/user-attachments/assets/fecf8f5a-8762-459e-bf55-0d2575d61d18" />
+
 <img width="2554" height="1420" alt="Screenshot 2026-04-10 235952" src="https://github.com/user-attachments/assets/55d28509-525e-4789-b9b1-5e7906eea89a" />
-<img width="2533" height="1392" alt="Screenshot 2026-04-11 000022" src="https://github.com/user-attachments/assets/4ded8d77-a370-4c1f-bd86-a8e9ad86c116" />
+
 
 
 
@@ -47,28 +48,47 @@ Total hand-written code: **zero lines.** The value here was in prompt design, to
 - Full-viewport hero with background image and gradient overlay text
 - Bento-style grid gallery (CSS Grid layout, not a library)
 - "Technical specifications" section — hardcoded numbers in JSX, not fetched from anywhere
+  <img width="2554" height="1268" alt="Screenshot 2026-04-11 000433" src="https://github.com/user-attachments/assets/cba37a84-b105-4142-92f1-87db073b194f" />
+  <img width="2551" height="1266" alt="Screenshot 2026-04-11 000444" src="https://github.com/user-attachments/assets/e54835ee-c2d8-45e1-827f-06bcb2c52367" />
+<img width="2558" height="1256" alt="Screenshot 2026-04-11 000454" src="https://github.com/user-attachments/assets/724e7576-3d42-4994-8a10-e83e34ec86fc" />
+<img width="2546" height="1257" alt="Screenshot 2026-04-11 000502" src="https://github.com/user-attachments/assets/670dd38e-7d3b-4230-9432-92b2aa66c394" />
+
 
 ### `/models` — Model Catalog
 - Grid of 5 car cards: 911, Taycan, Panamera, Cayenne, Macan
 - Three filter buttons: "Electric", "Sports", "SUV"
 - **The filters don't filter.** The buttons have hover states and click handlers, but no filtering logic is wired up. All 5 cards are always visible regardless of which button you click. This would take ~20 lines of code to fix (add a category field to each car object, add a `useState` for active filter, `.filter()` the array before rendering).
+ <img width="2552" height="1262" alt="Screenshot 2026-04-11 000515" src="https://github.com/user-attachments/assets/d7b5f20f-7fb3-47af-8f60-bfb73b877227" />
+<img width="2554" height="1290" alt="Screenshot 2026-04-11 000523" src="https://github.com/user-attachments/assets/611cfeac-639d-4635-8d6a-726e7e8a0c34" />
+<img width="2546" height="1257" alt="Screenshot 2026-04-11 000529" src="https://github.com/user-attachments/assets/ad778dc3-9076-46d3-8bab-6ad10a4754ae" />
+<img width="2559" height="1231" alt="Screenshot 2026-04-11 000558" src="https://github.com/user-attachments/assets/a52e5f03-8070-40a1-9e60-705acc415035" />
 
 ### `/configure` — 911 GT3 "Configurator"
 - Performance stats display (hp, 0-100, top speed) — all hardcoded
 - Color picker with 3 swatches: Guards Red, Shark Blue, Crayon
 - **The color picker is cosmetic.** It likely toggles a CSS class or swaps an image `src`. No configuration object is being built, no state is accumulated across choices, nothing is saveable or shareable. Calling this a "configurator" is generous — it's a color swatch toggle.
 - Another bento gallery section below
+  <img width="2559" height="1271" alt="Screenshot 2026-04-11 000611" src="https://github.com/user-attachments/assets/781bb60a-fc12-4cea-86e6-1bcb8fe3d7a7" />
+
 
 ### `/pre-book` — Pre-Booking Form
 - Glassmorphism form card (`backdrop-filter: blur()` + semi-transparent background)
 - Input fields for name, email, model selection
 - Submit button shows a confirmation overlay
 - **The form submits to nowhere.** It's `e.preventDefault()` → `setShowSuccess(true)`. No `fetch()` call, no form action, no API endpoint, no Formspree, no email, nothing. Your form data evaporates on submit. Zero validation beyond HTML `required` attributes.
+<img width="2550" height="1268" alt="Screenshot 2026-04-11 000627" src="https://github.com/user-attachments/assets/6c34b024-9584-41a3-a155-e3a6844247f4" />
+
 
 ### `/contact` — Contact & Inquiries
 - General inquiry form — same fake submission as pre-booking
 - Customer support details (phone, email) — hardcoded placeholder strings, probably not real numbers
 - "Showroom locator" — **not a map.** It's a static image or a styled `<div>` designed to look like a map. No Google Maps API key, no Mapbox, no geocoding, no location data. Pure visual decoration.
+  <img width="2556" height="1278" alt="Screenshot 2026-04-11 000634" src="https://github.com/user-attachments/assets/f7ca1071-1924-4fe4-96b2-848ef8112787" />
+<img width="2551" height="1244" alt="Screenshot 2026-04-11 000649" src="https://github.com/user-attachments/assets/9cf0bf62-797b-4ee9-a5be-cadcb8de0af0" />
+
+<img width="2559" height="1275" alt="Screenshot 2026-04-11 000700" src="https://github.com/user-attachments/assets/b074802d-f2fe-46d9-8b6c-dacf822a7b22" />
+<img width="2539" height="1271" alt="Screenshot 2026-04-11 000710" src="https://github.com/user-attachments/assets/15527265-3f2a-43d3-aa31-f4286ce1431d" />
+<img width="2552" height="1254" alt="image" src="https://github.com/user-attachments/assets/597d930d-d610-4eb7-bfd3-ad577b588c06" />
 
 ---
 
