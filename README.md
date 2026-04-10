@@ -145,8 +145,8 @@ For Jules
 Help me build these screens with smooth flow of one to another screen and smooth working of the buttons
 
 Design Reference Syntax
-The following HTML code is provided as design reference only to show the UI structure, styling, and layout. Please use this as inspiration for the visual design and component structure, but implement the functionality using the appropriate language and framework for the target repository (e.g., React, Vue, Swift, Kotlin, etc.). Adapt the design patterns and styling approach to match the project's conventions.
-+ the HTML code for each and every component(exported from Stitch)
+The following HTML code is provided as design reference only to show the UI structure, styling, and layout. Please use this as inspiration for the visual design and component structure, but implement the functionality using the appropriate language and framework for the target repository (e.g., React, Vue, Swift, Kotlin, etc.). Adapt the design patterns and styling approach to match the project's conventions and the HTML code for each and every component(exported from Stitch).
+
 
 
 ## Architecture Notes (For Anyone Reading the Code)
