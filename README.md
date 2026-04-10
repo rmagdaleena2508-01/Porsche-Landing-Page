@@ -115,6 +115,30 @@ These things are real and functional:
 | Spec numbers | Live/dynamic data | Hardcoded strings in JSX |
 
 ---
+## Prompts that i used to build this :
+
+from Chatgpt thinking 5.4 to Google Stitch
+==========================================
+Build a premium Porsche-inspired car showcase and pre-booking website using React frontend, Node.js + Express backend, and PostgreSQL database.
+
+Requirements:
+
+* Luxury premium UI with dark theme, elegant typography, smooth animations, glassmorphism cards, and high-end automotive branding feel
+* Pages: Home, Car Catalog, Car Details, Pre-Book page, Contact
+* Include premium Porsche models such as 911, Taycan, Panamera, Cayenne, Macan
+* Each car should have: name, hero image, price, horsepower, top speed, acceleration, description, gallery, and available colors
+* Add a “Pre-Book Now” button on every car page
+* No real payment integration
+* On clicking Place Order / Confirm Pre-Booking, save the booking in the database and show this success message:
+  “Your order has been confirmed — your supercar has been pre-booked and it’s racing fast to you.”
+* Create REST API routes for cars and pre-bookings
+* Add form validation for name, email, phone, city, selected car
+* Seed the database with sample Porsche cars
+* Use Tailwind CSS for styling
+* Make the site fully responsive
+* Add an admin-ready prebooking list endpoint, but no authentication needed for now
+* Keep code modular and production-structured
+
 
 ## Architecture Notes (For Anyone Reading the Code)
 
@@ -127,6 +151,14 @@ These things are real and functional:
 **No SEO.** It's a client-rendered SPA — the HTML that Vercel serves is an empty `<div id="root">`. Search engines see nothing. The page title is set, but there are no meta descriptions, no Open Graph tags, no structured data. If you share this link on LinkedIn, the preview card will be blank or generic.
 
 **HashRouter, not BrowserRouter.** The `/#/` in URLs (`porsche-landing-page-five.vercel.app/#`) means it's using `HashRouter`. This was probably chosen because it works on static hosts without rewrite rules — but Vercel supports `BrowserRouter` natively with a `vercel.json` rewrite config. The hash URLs look less clean and hurt SEO (if SEO mattered for this project, which it doesn't).
+-----
+For Jules
+=========
+Help me build these screens with smooth flow of one to another screen and smooth working of the buttons
+
+Design Reference Syntax
+The following HTML code is provided as design reference only to show the UI structure, styling, and layout. Please use this as inspiration for the visual design and component structure, but implement the functionality using the appropriate language and framework for the target repository (e.g., React, Vue, Swift, Kotlin, etc.). Adapt the design patterns and styling approach to match the project's conventions.
++ the HTML code for each and every component(exported from Stitch)
 
 ---
 
