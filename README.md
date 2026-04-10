@@ -138,6 +138,15 @@ Requirements:
 * Make the site fully responsive
 * Add an admin-ready prebooking list endpoint, but no authentication needed for now
 * Keep code modular and production-structured
+-----
+
+For Jules
+==========
+Help me build these screens with smooth flow of one to another screen and smooth working of the buttons
+
+Design Reference Syntax
+The following HTML code is provided as design reference only to show the UI structure, styling, and layout. Please use this as inspiration for the visual design and component structure, but implement the functionality using the appropriate language and framework for the target repository (e.g., React, Vue, Swift, Kotlin, etc.). Adapt the design patterns and styling approach to match the project's conventions.
++ the HTML code for each and every component(exported from Stitch)
 
 
 ## Architecture Notes (For Anyone Reading the Code)
@@ -151,14 +160,6 @@ Requirements:
 **No SEO.** It's a client-rendered SPA — the HTML that Vercel serves is an empty `<div id="root">`. Search engines see nothing. The page title is set, but there are no meta descriptions, no Open Graph tags, no structured data. If you share this link on LinkedIn, the preview card will be blank or generic.
 
 **HashRouter, not BrowserRouter.** The `/#/` in URLs (`porsche-landing-page-five.vercel.app/#`) means it's using `HashRouter`. This was probably chosen because it works on static hosts without rewrite rules — but Vercel supports `BrowserRouter` natively with a `vercel.json` rewrite config. The hash URLs look less clean and hurt SEO (if SEO mattered for this project, which it doesn't).
------
-For Jules
-=========
-Help me build these screens with smooth flow of one to another screen and smooth working of the buttons
-
-Design Reference Syntax
-The following HTML code is provided as design reference only to show the UI structure, styling, and layout. Please use this as inspiration for the visual design and component structure, but implement the functionality using the appropriate language and framework for the target repository (e.g., React, Vue, Swift, Kotlin, etc.). Adapt the design patterns and styling approach to match the project's conventions.
-+ the HTML code for each and every component(exported from Stitch)
 
 ---
 
